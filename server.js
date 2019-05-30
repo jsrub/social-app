@@ -1,10 +1,13 @@
 const express = require('express');
 const connectDB = require('./config/db');
-
+const gravatar = require('gravatar');
 const app = express();
 
 //Connect To DB
 connectDB();
+
+//Init Middlware
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('Running');
