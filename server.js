@@ -19,8 +19,8 @@ app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
-app.listen(4000, (req, res) => {
+app.listen(PORT, (req, res) => {
   console.log(`Server Port ${PORT}`);
 });
