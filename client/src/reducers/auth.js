@@ -23,7 +23,8 @@ export default function(state = initialState, action) {
       return {
         ...state,
         isAuthenticated: true,
-        loading: false
+        loading: false,
+        user: payload
       };
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
